@@ -1,6 +1,6 @@
 # CUDA (Parallel Computing Platform)
 
-**Why It Matters**: CUDA is NVIDIA’s cornerstone for GPU-accelerated computing, powering developer tools for AI, ML, and HPC—the heart of your Technical Program Manager role. You’ll manage toolchains (e.g., Nsight) that leverage CUDA, so understanding its role is key. On X, CUDA’s parallel computing prowess is hyped for speeding up AI workloads, and GTC 2024 showcased its use in LLM training.
+**Why It Matters**: CUDA is NVIDIA’s cornerstone for GPU-accelerated computing, powering developer tools for AI, ML, and HPC—central to your Technical Program Manager role. You’ll manage toolchains (e.g., Nsight) that leverage CUDA, so understanding its role is key. On X, CUDA’s parallel computing prowess is hyped for speeding up AI workloads, and GTC 2024 showcased its use in LLM training.
 
 **Depth**: Grasp the basics—what CUDA does, key terms (kernel, thread, block, grid), and its AI applications. No need to code or dive into syntax; focus on how CUDA enables tools and how you’d coordinate their delivery. Think program management: schedules, stakeholders, and developer needs.
 
