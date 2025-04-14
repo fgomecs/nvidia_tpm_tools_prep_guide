@@ -1,6 +1,6 @@
 # NVIDIA TPM Tools Prep Guide
 
-*by Francisco Gomez - April 2025*
+*by Francisco Gomez - April, 2025*
 
 This repository serves as a preparation guide for my interview for the **Technical Program Manager - Compute Developer Tools** role at NVIDIA, scheduled for Friday, April 18, 2025. It organizes key concepts, tools, and resources to align with the [job description](https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/Technical-Program-Manager---Compute-Developer-Tools_JR1995794-1), focusing on compute developer tools like CUDA, Nsight, and related technologies. Below are the subfolders, each covering a critical area to ensure I focus on the right topics for the interview.
 
