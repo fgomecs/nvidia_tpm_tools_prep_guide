@@ -24,7 +24,7 @@ This repository serves as a preparation guide for my interview for the **Technic
 - [Nsight](./Nsight/README.md)  
   Details NVIDIA Nsight tools (Nsight Compute, Nsight Systems) for profiling and debugging. Contains notes and examples on performance optimization, critical for supporting developer workflows.
 
-- [AI Workflows](./AI_Workflows/README.md)  
+- [AI Workflows](./AI%20Workflows/README.md)  
   Covers AI tools like cuDNN and TensorRT for model training and inference, key for NVIDIA’s developer ecosystem.
 
 - [Collaboration](./Collaboration/README.md)  
