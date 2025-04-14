@@ -1,45 +1,45 @@
 # NVIDIA TPM Tools Prep Guide
 
-*by Francisco Gomez - April, 2025*
+*by Francisco Gomez - April 2025*
 
-This repository serves as a preparation guide for my interview for the **Technical Program Manager - Compute Developer Tools** role at NVIDIA, scheduled for Friday, April 18, 2025. It organizes key concepts, tools, and resources to align with the [job description](https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/Technical-Program-Manager---Compute-Developer-Tools_JR1995794-1), focusing on compute developer tools like CUDA, Nsight, and related technologies. Below are the subfolders, each covering a critical area to ensure I focus on the right topics for the interview.
+This repository is my study hub for the **Technical Program Manager - Compute Developer Tools** interview at NVIDIA, set for Friday, April 18, 2025. It aligns with the [job description](https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/Technical-Program-Manager---Compute-Developer-Tools_JR1995794-1), emphasizing technical program management, GPU programming (CUDA, Nsight), and process optimization in matrixed teams. With 15+ years managing complex software and cloud projects (e.g., Microsoft’s 15,000-server provisioning), I’ve tailored this guide to showcase my track record of timely delivery, problem-solving, and innovation for NVIDIA’s compute ecosystem.
 
 ## Subfolders
 
 - [CUDA](./CUDA/README.md)  
-  Covers foundational CUDA concepts like kernels, threads, and memory management. Includes sample code (e.g., `array_add.cu`) to demonstrate parallel programming, central to NVIDIA’s compute tools.
+  Covers CUDA programming (kernels, threads, memory), with code like `array_add.cu` to show GPU expertise. Highlights my ability to support developers, critical for NVIDIA’s tools.
 
 - [DGX](./DGX/README.md)  
-  Explores NVIDIA DGX systems, the backbone for AI and compute workloads. Includes notes on how these platforms support developers, relevant for discussing scalability.
+  Explores DGX systems for AI/compute workloads. Ties to my experience scaling data center projects, ensuring flawless execution.
 
 - [GPUs](./GPUs/README.md)  
-  Provides an overview of NVIDIA’s GPU compute stack (e.g., H100, Blackwell). Useful for discussing how to align tools with NVIDIA’s hardware ecosystem.
+  Details NVIDIA’s GPU stack (H100, Blackwell). Supports my understanding of hardware-software integration for multi-platform delivery.
 
 - [Plan](./Plan/README.md)  
-  Focuses on TPM skills like roadmapping, stakeholder communication, and risk management. Includes scenarios to showcase cross-functional project leadership.
+  Focuses on TPM skills: roadmapping, risk management, JIRA workflows. Showcases my history leading concurrent schedules in matrixed teams, with scenarios reflecting process improvements.
 
 - [Tools](./Tools/README.md)  
-  Explores developer workflows, including build systems, CI/CD, and SDK usage. Helps articulate how to streamline processes for NVIDIA’s compute ecosystem.
+  Covers developer workflows (CI/CD, SDKs). Demonstrates my automation experience, streamlining processes like my VMware BI launch.
 
 - [Nsight](./Nsight/README.md)  
-  Details NVIDIA Nsight tools (Nsight Compute, Nsight Systems) for profiling and debugging. Contains notes and examples on performance optimization, critical for supporting developer workflows.
+  Details Nsight Compute/Systems for profiling/debugging. Highlights my grasp of code optimization tools, key to standing out.
 
-- [AI Workflows](./AI%20Workflows/README.md)  
-  Covers AI tools like cuDNN and TensorRT for model training and inference, key for NVIDIA’s developer ecosystem.
+- [AI_Workflows](./AI_Workflows/README.md)  
+  Explores cuDNN/TensorRT for AI training/inference. Ties to my ML analytics (Python, LSTM), showing innovation in developer ecosystems.
 
 - [Collaboration](./Collaboration/README.md)  
-  Details cross-functional strategies for aligning engineering, product teams, and leadership.
+  Covers cross-functional alignment (Agile, RACI). Reflects my problem-solving in matrixed organizations, like Microsoft’s zero-downtime ops.
 
 - [SDKs](./SDKs/README.md)  
-  Explores NVIDIA SDKs like CUDA Toolkit and DRIVE, critical for managing developer tools.
+  Details CUDA Toolkit, DRIVE SDKs. Showcases my systems software experience, with automation insights from cloud projects.
 
 ## Preparation Plan
 
-With the interview on Friday, I’ll prioritize:
-- **CUDA**: Review code daily to explain parallel computing confidently.
-- **Nsight**: Practice profiling examples to discuss optimization strategies.
-- **Plan**: Rehearse TPM scenarios to highlight leadership skills.
-- **Tools, GPUs, DGX**: Skim for context to tie tools to NVIDIA’s mission.
-- **AI Workflows, Collaboration, SDKs**: Add one (e.g., AI Workflows) by Thursday and skim 1-2 hours.
+With the interview tomorrow, I’ll prioritize NVIDIA’s key needs:
+- **CUDA/Nsight** (1 hour): Review `CUDA` code and `Nsight` profiling to nail GPU programming questions. Practice: “CUDA accelerates AI, and Nsight optimizes it, like my analytics.”
+- **Plan/Collaboration** (1 hour): Rehearse `Plan` scenarios (JIRA, roadmapping) and `Collaboration` (RACI, conflict). Practice: “I’d align teams with JIRA, like my Microsoft sync.”
+- **AI_Workflows** (30 min): Skim `AI_Workflows` (TensorRT). Practice: “cuDNN speeds training, like my ML project.”
+- **DGX/GPUs/Tools/SDKs** (30 min): Quick review for ecosystem context. Practice: “NVIDIA’s stack drives innovation, like my VMware process tweaks.”
+- **JIRA/Automation** (30 min): Note JIRA admin experience (from VMware) and automation (Python scripts). Commit notes to `Plan`/`Tools`.
 
-This setup uses GitHub’s Markdown for easy navigation, like a OneNote, keeping my prep streamlined.
+This Markdown hub ensures I navigate topics fast, tying my 7+ years in systems software and process improvements to NVIDIA’s needs. Ready to deliver flawless execution tomorrow!

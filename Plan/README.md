@@ -58,3 +58,10 @@
 - **GTC 2024/2025**: Note terms like “AI factory” (DGX), “trillion-parameter” (Blackwell), “microservices” (NIM).  
 - **Interview Strategy**: If unsure, say: “I’m familiar with CUDA’s role and eager to learn NVIDIA’s toolchain specifics.” Honesty shows growth.  
 - **Practice**: Run through all key points aloud (2 min each topic) to sound natural.
+
+## NVIDIA Alignment
+## NVIDIA Alignment
+- **TPM Track Record**: Managed Microsoft’s 15,000-server rollout, delivering concurrent cloud releases on inflexible schedules across matrixed teams (engineering, supply chain).
+- **JIRA Experience**: Used JIRA for roadmapping at VMware, acting as project admin to track 100+ tasks, ensuring zero delays. Practiced scenario: prioritizing Nsight feature bugs.
+- **Process Improvement**: Streamlined VMware BI workflows, boosting adoption 10% via automated dashboards, similar to NVIDIA’s tool delivery needs.
+- **Practice**: “I’d drive NVIDIA’s releases with JIRA, like my Microsoft ops ensured flawless execution.”

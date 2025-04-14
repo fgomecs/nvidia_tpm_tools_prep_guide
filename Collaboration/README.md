@@ -39,3 +39,9 @@
 - **GTC 2025**: Showcased Agile for AI toolchains—note “cross-functional sync” phrase.  
 - **Avoid**: Don’t memorize frameworks—focus on practical TPM skills.  
 - **Practice**: Explain collaboration in 2 sentences: “Collaboration aligns engineering and devs to deliver tools like Nsight. I’d drive sync with Agile, like my Microsoft projects.”
+
+##NVIDIA Fit
+## NVIDIA Fit
+- **Matrixed Leadership**: Aligned Microsoft’s cross-functional teams (devs, ops, PMs) for zero-downtime provisioning, solving conflicts via RACI, applicable to NVIDIA’s tool teams.
+- **Problem-Solving**: Resolved VMware delays by automating stakeholder updates, ensuring timely releases, like NVIDIA’s multi-platform needs.
+- **Practice**: “I’d sync NVIDIA’s matrixed teams with Agile, like my Microsoft sync cut risks.”

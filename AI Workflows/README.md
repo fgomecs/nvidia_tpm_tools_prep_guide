@@ -39,3 +39,9 @@
 - **GTC 2025**: Highlighted TensorRT-LLM for billion-parameter models—note “low-latency inference” buzzword.  
 - **Avoid**: Don’t study model architectures—focus on tools and TPM roles.  
 - **Practice**: Explain AI workflows in 2 sentences: “cuDNN and TensorRT accelerate AI training and inference on GPUs. I’d manage their delivery to empower developers, like my Microsoft projects.”
+
+##NVIDIA Prep
+## NVIDIA Prep
+- **Innovation**: Developed Python/LSTM analytics (2025), innovating like cuDNN/TensorRT for AI workflows.
+- **GPU Tools**: Studied Nsight profilers (Compute, Systems), aligning with NVIDIA’s debugging focus.
+- **Practice**: “cuDNN innovates AI, and I’d deliver it with passion, like my ML analytics.”
