@@ -10,7 +10,7 @@
 
 ## 4-Day Schedule (Adjust for 3-6 Days)
 
-- [ ] **Day 1: CUDA Basics** (3 hours)  
+- [X] **Day 1: CUDA Basics** (3 hours)  
   Tasks: What is CUDA?, Key Terms.  
   URLs:  
   - https://developer.nvidia.com/cuda-toolkit  
@@ -19,7 +19,7 @@
   **Interview Tip**: Be ready for: “How does CUDA fit in tools?” Use your VMware governance example to show coordination.  
   **Resume Link**: Link to your ML model adaptation—both leverage compute.
 
-- [ ] **Day 2: DGX and GPUs** (3 hours)  
+- [] **Day 2: DGX and GPUs** (3 hours)  
   Tasks: DGX Overview, H100 Overview.  
   URLs:  
   - https://www.nvidia.com/en-us/data-center/dgx-platform/  
