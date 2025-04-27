@@ -28,7 +28,7 @@
   **Interview Tip**: If asked about scaling, say: “I’d use my Microsoft scheduling to ensure DGX tool delivery.” Mention Spark’s developer focus.  
   **Resume Link**: Tie to your zero-waste ops—both optimize compute.
 
-- [ ] **Day 3: GPUs and Tools** (3 hours)  
+- [x] **Day 3: GPUs and Tools** (3 hours)  
   Tasks: Blackwell/Rubin, Nsight Tools, cuDNN.  
   URLs:  
   - https://www.nvidia.com/en-us/on-demand/session/gtcspring25-a41247/  
