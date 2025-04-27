@@ -38,7 +38,7 @@
   **Interview Tip**: For tools, say: “I’d align Nsight features with developers, using Agile like VMware.” Pivot to management if tech gets deep.  
   **Resume Link**: Compare to your BI team launch—both deliver insights.
 
-- [ ] **Day 4: Tools and Review** (3 hours)  
+- [x ] **Day 4: Tools and Review** (3 hours)  
   Tasks: TensorRT, NIM, review all topics.  
   URLs:  
   - https://developer.nvidia.com/tensorrt  
