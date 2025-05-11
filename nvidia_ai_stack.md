@@ -138,7 +138,6 @@ Used to store datasets, pretrained models, and logs.
 This layer ensures data availability, versioning, and speed.
 
 ---
-
 ```mermaid
 graph TD
     %% Define subgraphs for layers
@@ -147,8 +146,12 @@ graph TD
         B[NIMs / Custom Apps<br>LLMs, CV, ASR, RAG Pipelines]
     end
     subgraph Orchestration Layer
-        C[Kubernetes<br>w/ NVIDIA GPU Operator]
-        D[Docker<br>w/ NVIDIA Container Toolkit]
+        subgraph Kubernetes Orchestration
+            C[Kubernetes<br>Scheduler, NVIDIA GPU Operator]
+        end
+        subgraph Containerization
+            D[Docker<br>w/ NVIDIA Container Toolkit]
+        end
     end
     subgraph Inference Layer
         E[Triton Inference Server]
@@ -162,31 +165,63 @@ graph TD
         I[cuDNN / cuBLAS / cuTENSOR]
     end
     subgraph CUDA Layer
-        J[CUDA Runtime / nvcc / GPU Driver]
+        J[CUDA Runtime / GPU Driver]
+        K[nvcc Output<br>Grids, Blocks, Threads]
     end
     subgraph Hardware Layer
-        K[NVIDIA GPU Hardware<br>H100, GB200]
+        L[NVIDIA GPU Hardware]
+        M[SM<br>Streaming Multiprocessor]
+        N[CUDA Cores<br>Scalar, General-Purpose Compute]
+        O[Tensor Cores<br>Matrix Ops for AI/HPC]
+        P[SFU<br>Transcendental/Math Functions]
+        Q[Warps<br>32 Threads]
+        R[SASS<br>Shader Assembly]
+        S[PSX<br>Programmable Switch]
     end
     subgraph Storage Layer
-        L[Persistent Storage<br>Model Catalogs, Data Lakes, NVMe]
+        T[Persistent Storage<br>Model Catalogs, Data Lakes, NVMe]
     end
 
     %% Define interactions with labels
     A -->|REST/gRPC APIs| B
-    B -->|Containerized Deployment| C
-    B -->|Containerized Deployment| D
-    C -->|Orchestrates| E
-    D -->|Packages| E
+    B -->|Deploys to| D
+    D -->|Packages Containers| C
+    C -->|Schedules/Orchestrates| E
     E -->|Optimizes with| F
     E -->|Executes with| G
     E -->|Serves Models| H
     H -->|Uses| I
     I -->|Accelerates| J
-    J -->|Drives| K
-    L -->|Stores Models/Data| C
-    L -->|Provides Models/Data| E
-    E -->|Loads Models/Data| L
+    J -->|Drives| L
+    K -->|Defines Execution| Q
+    L -->|Contains| M
+    M -->|Executes| Q
+    Q -->|Scalar Compute| N
+    Q -->|Matrix Compute| O
+    Q -->|Math Functions| P
+    R -->|Instructs| Q
+    S -->|Routes| M
+    T -->|Stores Models/Data| C
+    T -->|Provides Models/Data| E
+    E -->|Loads Models/Data| T
 
-    %% Styling for clarity
-    classDef layer fill:#f9f9f9,stroke:#333,stroke-width:2px;
-    class A,B,C,D,E,F,G,H,I,J,K,L layer;
+    %% Styling for readability
+    classDef layer fill:#e6f3ff,stroke:#005577,stroke-width:2px,color:#000000
+    classDef hardware fill:#d9f7d9,stroke:#005577,stroke-width:2px,color:#000000
+    classDef orch fill:#e6e6fa,stroke:#005577,stroke-width:2px,color:#000000
+    class A,B,E,F,G,H,I,J,K,T layer
+    class L,M,N,O,P,Q,R,S hardware
+    class C,D orch
+    style A fill:#b3e0ff
+    style B fill:#b3e0ff
+    style C fill:#e6e6fa
+    style D fill:#dcdcdc
+    style E fill:#fffacd
+    style F fill:#fffacd
+    style G fill:#fffacd
+    style H fill:#f0e68c
+    style I fill:#add8e6
+    style J fill:#87cefa
+    style K fill:#87cefa
+    style T fill:#f5f5dc
+```
