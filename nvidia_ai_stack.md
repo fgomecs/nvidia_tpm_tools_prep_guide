@@ -139,15 +139,54 @@ This layer ensures data availability, versioning, and speed.
 
 ---
 
-## 🧠 Visual Summary of Flow:
 ```mermaid
 graph TD
-    A[End Users / APIs] --> B[NIMs / Custom Apps]
-    B --> C[Kubernetes / Docker]
-    C --> D[Triton / TensorRT / ONNX Runtime]
-    D --> E[PyTorch / TensorFlow / ONNX]
-    E --> F[cuDNN / cuBLAS / cuTENSOR]
-    F --> G[CUDA Runtime / nvcc / GPU Driver]
-    G --> H[NVIDIA GPU Hardware (H100, GB200)]
-    H --> I[Persistent Storage / GPUDirect / NVMe]
-```
+    %% Define subgraphs for layers
+    subgraph Application Layer
+        A[End Users / APIs<br>Chatbots, AI Agents, LLM UIs]
+        B[NIMs / Custom Apps<br>LLMs, CV, ASR, RAG Pipelines]
+    end
+    subgraph Orchestration Layer
+        C[Kubernetes<br>w/ NVIDIA GPU Operator]
+        D[Docker<br>w/ NVIDIA Container Toolkit]
+    end
+    subgraph Inference Layer
+        E[Triton Inference Server]
+        F[TensorRT]
+        G[ONNX Runtime]
+    end
+    subgraph Framework Layer
+        H[PyTorch / TensorFlow / ONNX Models]
+    end
+    subgraph CUDA Libraries
+        I[cuDNN / cuBLAS / cuTENSOR]
+    end
+    subgraph CUDA Layer
+        J[CUDA Runtime / nvcc / GPU Driver]
+    end
+    subgraph Hardware Layer
+        K[NVIDIA GPU Hardware<br>H100, GB200]
+    end
+    subgraph Storage Layer
+        L[Persistent Storage<br>Model Catalogs, Data Lakes, NVMe]
+    end
+
+    %% Define interactions with labels
+    A -->|REST/gRPC APIs| B
+    B -->|Containerized Deployment| C
+    B -->|Containerized Deployment| D
+    C -->|Orchestrates| E
+    D -->|Packages| E
+    E -->|Optimizes with| F
+    E -->|Executes with| G
+    E -->|Serves Models| H
+    H -->|Uses| I
+    I -->|Accelerates| J
+    J -->|Drives| K
+    L -->|Stores Models/Data| C
+    L -->|Provides Models/Data| E
+    E -->|Loads Models/Data| L
+
+    %% Styling for clarity
+    classDef layer fill:#f9f9f9,stroke:#333,stroke-width:2px;
+    class A,B,C,D,E,F,G,H,I,J,K,L layer;
